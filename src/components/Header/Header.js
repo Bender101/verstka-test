@@ -5,11 +5,11 @@ import Address from "../Address/Address";
 import { Link } from "react-router-dom";
 
 const Header = () => {
- const [status, setStatus] = useState(false)
+  const [status, setStatus] = useState(false);
 
- const changeStatus = () => {
-  setStatus(!status)
- }
+  const changeStatus = () => {
+    setStatus(!status);
+  };
 
   return (
     <div className="header-container">
@@ -37,17 +37,22 @@ const Header = () => {
             <img src="/img/vector/A-big.png" />
           </div>
         </div>
-        {status ? <Address changeStatus={changeStatus}/> : <div className="address-block">
+        {status ? (
+          <Address changeStatus={changeStatus} />
+        ) : (
+          <div className="address-block">
             <div className="marker">
               <img src="/img/vector/marker.png" />
             </div>
             <div className="marker-circle">
               <img src="/img/vector/marker-circle.png" />
             </div>
-          <Link to="#" onClick={changeStatus}>
-            <div className="address">Ул. Тестовая д1 стр.4</div>
-          </Link>
-        </div>}
+
+            <div onClick={changeStatus} className="address">
+              Ул. Тестовая д1 стр.4
+            </div>
+          </div>
+        )}
         <div className="search-block">
           <div className="search-loupe">
             <img src="/img/vector/search.png" />
@@ -55,13 +60,15 @@ const Header = () => {
           <div className="search-text">Поиск</div>
         </div>
         <div className="signin">
-          <div className="arrow">
-            <img src="/img/vector/->.png" />
-          </div>
-          <div className="staple">
-            <img src="/img/vector/].png" />
-          </div>
-          <div className="signin-title">Войти</div>
+          <Link to="#">
+            <div className="arrow">
+              <img src="/img/vector/->.png" />
+            </div>
+            <div className="staple">
+              <img src="/img/vector/].png" />
+            </div>
+            <div className="signin-title">Войти</div>
+          </Link>
         </div>
         <div className="cart">
           <img src="/img/vector/cart.png" />

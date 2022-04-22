@@ -147,6 +147,7 @@ top: 24px;
   position: absolute;
   top:35.5px;
   left: 1193.51px;
+
 }
 
 .staple {
@@ -159,6 +160,8 @@ top: 24px;
   position: absolute;
   bottom: 8.6px;
   left: 33px;
+
+  color: black;
 }
 
 .cart {
