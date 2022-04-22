@@ -1,12 +1,13 @@
 .App {
   width: 1600px;
-  max-width: 1598px;
+  
   margin: 0 auto;
   
 }
 
 
 .container {
+  max-width: 1598px;
   position: relative;
   margin: 0 auto;
 }

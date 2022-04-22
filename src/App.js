@@ -2,10 +2,8 @@ import "./App.css";
 import Header from "./components/Header/Header";
 import {
   BrowserRouter,
-  // Routes,
-  // Route,
 } from "react-router-dom";
-import Address from "./components/Address/Address";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   return (
@@ -13,6 +11,7 @@ function App() {
       <div className="App">
         <div className="container">
           <Header />
+          <Navbar/>
         </div>
       </div>
     </BrowserRouter>

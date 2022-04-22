@@ -74,7 +74,6 @@ const Header = () => {
           <img src="/img/vector/cart.png" />
         </div>
       </div>
-      <Navbar />
     </div>
   );
 };
