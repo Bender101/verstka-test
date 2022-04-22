@@ -12,3 +12,38 @@
   width: 140px;
   height: 40px;
 }
+
+.navbar-link {
+  position: relative;
+   display: flex;
+   flex-direction: row;  
+   justify-content: center;
+   align-items: center;
+  color: #fff;
+  font-weight: bold;
+}
+
+.navbar-link:hover {
+  border-radius: 6px;
+  background-color: #fff;
+  color: #000;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.navbar-link p {
+  display: block;
+}
+
+.navbar-link img {
+  position: absolute;
+  height: auto;
+  right: 1px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}

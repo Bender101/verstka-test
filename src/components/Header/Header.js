@@ -36,7 +36,7 @@ const Header = () => {
           <div className="marker-circle">
             <img src="/img/vector/marker-circle.png" />
           </div>
-          <div className="address">Ул. Говножопа д1 стр.4</div>
+          <div className="address">Ул. Тестовая д1 стр.4</div>
         </div>
         <div className="search-block">
           <div className="search-loupe">
