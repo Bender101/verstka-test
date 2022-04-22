@@ -101,8 +101,8 @@
   width: 400px;
   height: 21px;
   position: absolute;
-  left: 306.88px;
-  top: 29.06px;
+  left: 305.88px;
+  top: 28.06px;
 }
 
 
@@ -117,7 +117,16 @@
   position: absolute;
   top: 8px;
   left: 42px;
+
+  color: black;
 }
+
+.address-input {
+position: absolute;
+left: 292px;
+top: 24px;
+}
+
 
 .search-block {
   width: 90px;

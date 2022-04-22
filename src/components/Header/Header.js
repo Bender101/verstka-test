@@ -1,8 +1,16 @@
 import "./Header.css";
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../Navbar/Navbar";
+import Address from "../Address/Address";
+import { Link } from "react-router-dom";
 
 const Header = () => {
+ const [status, setStatus] = useState(false)
+
+ const changeStatus = () => {
+  setStatus(!status)
+ }
+
   return (
     <div className="header-container">
       <div className="header-content">
@@ -29,15 +37,17 @@ const Header = () => {
             <img src="/img/vector/A-big.png" />
           </div>
         </div>
-        <div className="address-block">
-          <div className="marker">
-            <img src="/img/vector/marker.png" />
-          </div>
-          <div className="marker-circle">
-            <img src="/img/vector/marker-circle.png" />
-          </div>
-          <div className="address">Ул. Тестовая д1 стр.4</div>
-        </div>
+        {status ? <Address changeStatus={changeStatus}/> : <div className="address-block">
+            <div className="marker">
+              <img src="/img/vector/marker.png" />
+            </div>
+            <div className="marker-circle">
+              <img src="/img/vector/marker-circle.png" />
+            </div>
+          <Link to="#" onClick={changeStatus}>
+            <div className="address">Ул. Тестовая д1 стр.4</div>
+          </Link>
+        </div>}
         <div className="search-block">
           <div className="search-loupe">
             <img src="/img/vector/search.png" />
