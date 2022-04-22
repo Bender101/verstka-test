@@ -1,0 +1,14 @@
+.navbar-content {
+  display: flex;
+  flex-direction: row;
+  padding: 0 100px 0;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background-color: #9CCB3B;
+}
+
+.navbar-content div {
+  width: 140px;
+  height: 40px;
+}
